@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giới thiệu - Nguyễn Văn Phúc</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("nen.jpg"); /* Đổi thành nen.jpg trong cùng thư mục */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      margin-top: 50px;
+      border-radius: 10px;
+    }
+    img.avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+      color: #444;
+    }
+    .socials {
+      margin-top: 30px;
+    }
+    .socials a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .facebook { background-color: #3b5998; }
+    .instagram { background-color: #E1306C; }
+    .tiktok { background-color: black; }
+
+    form {
+      margin-top: 40px;
+      text-align: left;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    form button {
+      background-color: #2d89ef;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="avatar" src="phúc.jpg" alt="Ảnh đại diện" />
+
+    <h1>Nguyễn Văn Phúc</h1>
+    <p>Xin chào! Mình là Phúc. Mình đam mê lập trình web, thích tìm hiểu công nghệ và chia sẻ kiến thức.</p>
+    <p>Sở thích: nghe nhạc, học code, các chàng trai mạnh mẽ.</p>
+
+    <div class="socials">
+      <a class="facebook" href="https://www.facebook.com/van.phucnguyenk4" target="_blank">Facebook</a>
+      <a class="instagram" href="https://www.instagram.com/vanphuc.1310/" target="_blank">Instagram</a>
+      <a class="tiktok" href="https://www.tiktok.com/@vanphuc1310" target="_blank">TikTok</a>
+    </div>
+
+    <form action="https://formspree.io/f/xeogrkjp" method="POST">
+      <h3>Liên hệ với mình:</h3>
+
+      <label for="name">Tên của bạn:</label>
+      <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required>
+
+      <label for="phone">Số điện thoại của bạn:</label>
+      <input type="tel" id="phone" name="phone" placeholder="VD: 0912345678" required>
+
+      <label for="message">Lời nhắn:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Nhập nội dung..." required></textarea>
+
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+</body>
+</html>
